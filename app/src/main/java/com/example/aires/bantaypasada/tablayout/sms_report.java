@@ -90,7 +90,8 @@ public class sms_report extends Fragment {
                 DriversList.add("1");
                 DriversList.add("2");
                 DriversList.add("3");
-                arrayAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_dropdown_item, DriversList);
+                arrayAdapter = new ArrayAdapter<>(getContext(), R.layout.spinner_textview, DriversList);
+                arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spinner.setAdapter(arrayAdapter);
             }
         });
