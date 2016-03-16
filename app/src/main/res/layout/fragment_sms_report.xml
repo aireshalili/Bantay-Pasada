@@ -12,9 +12,10 @@
         android:padding="10dp">
 
         <RadioGroup
+            android:layout_marginBottom="10dp"
+            android:id="@+id/radioGROUP"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="20dp">
+            android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/traffic"
                 android:layout_width="wrap_content"
@@ -34,15 +35,25 @@
                 android:text="Others" />
         </RadioGroup>
 
+        <Spinner
+
+            android:layout_marginBottom="10dp"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
         <EditText
-            android:hint="Header"
-            android:background="@drawable/edittext_bg"
-            android:id="@+id/sms_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:id="@+id/header"
+            android:background="@drawable/edittext_bg"
             android:padding="4dp"
-            android:textColorHint="#9f9f9f"/>
+            android:hint="Header"
+            android:textColorHint="#9f9f9f"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            />
 
         <EditText
             android:hint="Details"
@@ -58,6 +69,7 @@
             android:textColorHint="#9f9f9f"/>
 
         <Button
+            android:id="@+id/button_send"
             android:background="@drawable/button_home"
             android:textColor="#fff"
             android:layout_gravity="center"

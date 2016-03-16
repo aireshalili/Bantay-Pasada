@@ -11,9 +11,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.aires.bantaypasada.tablayout.report_reg;
 import com.example.aires.bantaypasada.tablayout.sms_report;
@@ -61,9 +65,9 @@ public class reportNew extends AppCompatActivity {
         });
 
 
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
 
 
     private void setupViewpager(ViewPager viewPager){
