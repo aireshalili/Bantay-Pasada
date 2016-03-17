@@ -102,11 +102,16 @@ public class MainActivity extends AppCompatActivity
 
         PieDataSet dataset = new PieDataSet(entries, "");
 
+        int cols[]={Color.parseColor("#a62224"),Color.parseColor("#FFF7C601"),Color.parseColor("#FFE75900")};
+
+//        dataset.setColors(cols);
+
         // creating labels
         final ArrayList<String> labels = new ArrayList<String>();
         labels.add("Traffic Violation");
         labels.add("Driver's Attitude");
         labels.add("Others");
+
 
         PieData data = new PieData(labels, dataset); // initialize Piedata
         pieChart.setData(data); //set data into chart
@@ -115,7 +120,7 @@ public class MainActivity extends AppCompatActivity
         data.setValueTextColor(Color.WHITE);
         data.setValueFormatter(new MainActivity());
 
-        dataset.setColors(ColorTemplate.COLORFUL_COLORS); // set the color
+        dataset.setColors(cols); // set the color
         pieChart.animateY(1000);
         pieChart.setCenterText("Reports per day");
         pieChart.setCenterTextSize(14);

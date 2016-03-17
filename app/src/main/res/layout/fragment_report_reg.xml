@@ -81,7 +81,7 @@
             <ImageView
                 android:layout_marginBottom="10dp"
                 android:padding="4dp"
-                android:background="#ba4e4e"
+                android:background="@drawable/camera_location_bg"
                 android:id="@+id/newImage"
                 android:gravity="left"
                 android:layout_width="wrap_content"
@@ -97,6 +97,22 @@
                 android:layout_marginBottom="10dp"
                 android:visibility="gone" />
 
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location/Route (optional):"
+                android:gravity="left"/>
+
+            <ImageView
+                android:id="@+id/GPS_icon"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_location_bg"
+                android:src="@android:drawable/ic_menu_compass"
+                android:layout_marginBottom="10dp"/>
+
             <Button
                 android:id="@+id/button_send"
                 android:layout_width="wrap_content"
@@ -106,7 +122,6 @@
                 android:gravity="center"
                 android:text="Send"
                 android:textColor="#fff" />
-
 
         </LinearLayout>
 

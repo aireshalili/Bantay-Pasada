@@ -162,8 +162,11 @@ public class report_reg extends Fragment {
                     } catch (Exception e) {
                     }
                 }
+                try{
+                    theImage = imageView.getTag().toString();
+                }catch (Exception e){}
+
                 final String smsBody = body.getText().toString();
-                theImage = imageView.getTag().toString();
 
                 if (head.equals("")) {
                     Toast.makeText(getContext(), "Empty header", Toast.LENGTH_SHORT).show();
