@@ -2,12 +2,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.aires.bantaypasada.tablayout.report_reg">
+    tools:context="com.example.aires.bantaypasada.tablayout.sms_report">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
 
+            <RadioGroup
+                android:id="@+id/radioGROUP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/traffic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Traffic Violation" />
+
+                <RadioButton
+                    android:id="@+id/driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver's Attitude" />
+
+                <RadioButton
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Header"
+                android:padding="4dp"
+                android:textColorHint="#9f9f9f"
+                android:visibility="gone" />
+
+            <EditText
+                android:windowSoftInputMode="stateHidden"
+                android:id="@+id/sms_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="top"
+                android:hint="Details"
+                android:lines="5"
+                android:maxLines="5"
+                android:padding="4dp"
+                android:textColorHint="#9f9f9f" />
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Image (optional):"
+                android:gravity="left"/>
+
+            <ImageView
+                android:layout_marginBottom="10dp"
+                android:padding="4dp"
+                android:background="#ba4e4e"
+                android:id="@+id/newImage"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_camera"/>
+
+            <ImageView
+                android:padding="2dp"
+                android:background="#cfcfcf"
+                android:id="@+id/imageLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_home"
+                android:gravity="center"
+                android:text="Send"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
 </FrameLayout>
