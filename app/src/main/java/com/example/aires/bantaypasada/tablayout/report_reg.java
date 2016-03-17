@@ -229,6 +229,7 @@ public class report_reg extends Fragment {
                     e.printStackTrace();
                 }
                 String path = destination.getAbsolutePath();
+                imageView.setVisibility(View.VISIBLE);
                 imageView.setImageBitmap(thumbnail);
                 imageView.setTag(path);
             } else if (requestCode == SELECT_FILE) {
