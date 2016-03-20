@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.aires.bantaypasada.OpenStreetMap.OpenStreetMap;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(MainActivity.this, myLocation.class);
+                intent = new Intent(MainActivity.this, OpenStreetMap.class);
                 startActivity(intent);
             }
         });

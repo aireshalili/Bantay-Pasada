@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.aires.bantaypasada">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -40,18 +45,18 @@
                 android:value="com.example.aires.bantaypasada.MainActivity" />
         </activity>
         <activity
-            android:screenOrientation="portrait"
             android:name=".reportNew"
             android:label="@string/title_activity_report_new"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.aires.bantaypasada.MainActivity" />
         </activity>
         <activity
-            android:name=".myLocation"
-            android:label="@string/title_activity_my_location"
+            android:name=".OpenStreetMap.OpenStreetMap"
+            android:label="@string/title_activity_open_street_map"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
