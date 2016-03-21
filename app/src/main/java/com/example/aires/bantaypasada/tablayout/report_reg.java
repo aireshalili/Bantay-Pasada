@@ -26,6 +26,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.aires.bantaypasada.OpenStreetMap.OpenStreetMap;
 import com.example.aires.bantaypasada.R;
 
 import java.io.ByteArrayOutputStream;
@@ -145,6 +146,15 @@ public class report_reg extends Fragment {
             @Override
             public void onClick(View v) {
                 selectImage();
+            }
+        });
+
+        ImageView GPS = (ImageView) getView().findViewById(R.id.GPS_icon);
+        GPS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent location_tracker = new Intent(getContext(), OpenStreetMap.class);
+                startActivity(location_tracker);
             }
         });
 
