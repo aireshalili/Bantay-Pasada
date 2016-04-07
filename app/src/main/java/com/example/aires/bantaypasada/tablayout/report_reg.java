@@ -76,18 +76,25 @@ public class report_reg extends Fragment {
                 List<String> TrafficList;
                 TrafficList = new ArrayList<>();
                 TrafficList.add("Driving under the influence of liquor");
-                TrafficList.add("Driving under the influence of drugs");
                 TrafficList.add("Allowing an unlicensed/improperly licensed person to drive motor vehicle");
-                TrafficList.add("Allowing an unlicensed/improperly licensed person to drive motor vehicle");
-                TrafficList.add("Possession and use of fake/spurious Driver’s License");
                 TrafficList.add("Conviction of the driver of a crime using a motor vehicle");
-                TrafficList.add("Operating / driving a motor vehicle which is unregistered/improperly Registered");
-                TrafficList.add("Operating a motor vehicle with unregistered substitute or replacement engine, engine block or chassis");
-                TrafficList.add("Operating /allowing the operation of MV with a suspended / revoked Certificate/Official Receipt of registration");
-                TrafficList.add("Tourist operating or allowing the use of non Philippine registered Motor Vehicle beyond the 90 day period of his sojourn in the country");
                 TrafficList.add("Display/Use of an expired commemorative plates or stickers");
                 TrafficList.add("Tampered/ marked plates or stickers ");
                 TrafficList.add("Illegal transfer or use of MV regularly issued MV plates, tags or stickers except security plates on authorized Motor Vehicle");
+                TrafficList.add("Allowing passenger on top of vehicle");
+                TrafficList.add("Cutting an overtaken vehicle");
+                TrafficList.add("Drag Racing / Speed Contest");
+                TrafficList.add("Driving in sleeveless shirt");
+                TrafficList.add("Driving in slippers");
+                TrafficList.add("Driving while using cellular phone/handset radio");
+                TrafficList.add("Excess Passenger / Cargo");
+                TrafficList.add("Failure to give way to police / fire veh / ambulance");
+                TrafficList.add("Illegal overtaking");
+                TrafficList.add("Involve in accident");
+                TrafficList.add("No brake lights");
+                TrafficList.add("Unauthorized bell/siren/exhaust whistle");
+
+
                 arrayAdapter = new ArrayAdapter<>(getContext(), R.layout.spinner_textview, TrafficList);
                 arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spinner.setAdapter(arrayAdapter);

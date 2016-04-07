@@ -96,23 +96,34 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:visibility="gone" />
+                <TextView
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location/Route (optional):"
+                    android:gravity="left"/>
 
-            <TextView
-                android:textSize="15dp"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Location/Route (optional):"
-                android:gravity="left"/>
-
-            <ImageView
-                android:id="@+id/GPS_icon"
-                android:padding="4dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/camera_location_bg"
-                android:src="@android:drawable/ic_menu_compass"
-                android:layout_marginBottom="10dp"/>
-
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/GPS_icon"
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_location_bg"
+                    android:src="@android:drawable/ic_menu_compass"
+                    android:layout_marginRight="5dp"
+                    />
+                <TextView
+                    android:textColor="#363636"
+                    android:gravity="center_vertical"
+                    android:text="6.0669116, 125.1266697"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
             <Button
                 android:id="@+id/button_send"
                 android:layout_width="wrap_content"
